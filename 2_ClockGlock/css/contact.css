@@ -1,0 +1,96 @@
+.main-container {
+  width: 70vw;
+  margin: 0 auto;
+}
+
+.social-card-container {
+  height: 60vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.social-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.social-link {
+  margin: 1rem;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 36px;
+  color: #505156;
+  transition: 300ms;
+  cursor: pointer;
+}
+
+.social-link:hover {
+  transform: translateY(-3px);
+}
+
+.bubble-1 {
+  position: absolute;
+  width: 330px;
+  height: 327px;
+  left: 324px;
+  top: 103px;
+  border-radius: 50%;
+  z-index: -1;
+  background: rgba(80, 81, 86, 0.04);
+}
+
+.bubble-2 {
+  position: absolute;
+  width: 300px;
+  height: 284px;
+  left: 885px;
+  top: 318px;
+  border-radius: 50%;
+  z-index: -1;
+  background: rgba(80, 81, 86, 0.04);
+}
+
+.bubble-3 {
+  position: absolute;
+  width: 298px;
+  height: 275px;
+  left: -74px;
+  top: 282px;
+  z-index: -1;
+  border-radius: 50%;
+  background: rgba(80, 81, 86, 0.04);
+}
+
+.bubble-4 {
+  position: absolute;
+  width: 330px;
+  height: 327px;
+  right: 0px;
+  top: 0px;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.bubble-4::before {
+  transform: translate(60px, -95px);
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  background: rgba(80, 81, 86, 0.04);
+}
+
+@media screen and (max-width: 1203px) {
+  .bubble-2 {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 655px) {
+  .bubble-1 {
+    display: none;
+  }
+}

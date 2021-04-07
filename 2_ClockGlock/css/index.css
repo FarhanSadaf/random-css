@@ -1,0 +1,147 @@
+main {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.desc-section {
+  align-self: center;
+  margin-left: 2vw;
+}
+
+.btns-section {
+  margin-top: 4.5vh;
+}
+
+.btn-hollow {
+  margin-right: 1.5vw;
+}
+
+.cover-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cover-img {
+  width: 400px;
+  filter: drop-shadow(-2px 4px 5px rgba(0, 0, 0, 0.25));
+}
+
+.scroll-btns {
+  margin-bottom: 50px;
+  width: 15vw;
+  min-width: 200px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.scroll-btns img {
+  cursor: pointer;
+  transition: 300ms;
+}
+
+.scroll-btns img:hover {
+  transform: translateY(-3px);
+}
+
+.bubble-1 {
+  position: absolute;
+  width: 262px;
+  height: 252px;
+  left: 284px;
+  top: 150px;
+  border-radius: 50%;
+  z-index: -1;
+  background: rgba(80, 81, 86, 0.04);
+}
+
+.bubble-2 {
+  position: absolute;
+  width: 329px;
+  height: 307px;
+  left: -216px;
+  top: 344px;
+  border-radius: 50%;
+  z-index: -1;
+  background: rgba(80, 81, 86, 0.04);
+}
+
+.bubble-3 {
+  position: absolute;
+  width: 214px;
+  height: 208px;
+  left: 332px;
+  bottom: 0px;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.bubble-3::before {
+  transform: translate(0px, 131px);
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  background: rgba(80, 81, 86, 0.04);
+}
+
+.bubble-4 {
+  position: absolute;
+  width: 371px;
+  height: 390px;
+  left: 820px;
+  top: 190px;
+  border-radius: 50%;
+  z-index: -1;
+  background: rgba(80, 81, 86, 0.04);
+}
+
+.bubble-5 {
+  position: absolute;
+  width: 403px;
+  height: 368px;
+  top: 0px;
+  right: 0px;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.bubble-5::before {
+  transform: translate(160px, -158px);
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  background: rgba(80, 81, 86, 0.04);
+}
+
+@media screen and (max-width: 1214px) {
+  .bubble-2,
+  .bubble-4 {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .bubble-1,
+  .bubble-3 {
+    display: none;
+  }
+}
+
+/* Carousel-slider */
+.carousel-container {
+  width: 400px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.carousel-slide {
+  height: 400px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}

@@ -1,0 +1,112 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: url(./images/kitten-bg.png) no-repeat center center fixed;
+  background-size: cover;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  min-height: 15vh;
+}
+
+.nav-logo {
+  margin-left: 42px;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  width: 30%;
+  margin-right: 371px;
+  margin-bottom: 9px;
+}
+
+.nav-links li {
+  list-style: none;
+}
+
+.nav-links a {
+  display: inline-block;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 36px;
+  letter-spacing: 0.1em;
+  color: #c4c4c4;
+  text-decoration: none;
+  transition: 300ms;
+}
+
+.nav-links a:hover {
+  color: #e8e5e5;
+  transform: translateY(-3px);
+}
+
+.polygon-shapes {
+  position: absolute;
+  width: 700px;
+  height: 100vh;
+  z-index: -10;
+  background: url(./images/PolygonShapes.svg) no-repeat;
+  background-size: contain;
+}
+
+.content {
+  position: absolute;
+  left: 47px;
+  top: 249px;
+  transition: 700ms;
+}
+
+.content:hover {
+  transform: translateX(10px);
+}
+
+.content h1 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 44px;
+  line-height: 72px;
+  letter-spacing: 0.1em;
+  color: #2c2c2c;
+}
+
+.content p {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: 0.1em;
+  color: #000000;
+}
+
+.content a {
+  margin-top: 16px;
+  text-decoration: none;
+  display: inline-block;
+  width: 120px;
+  background: rgba(44, 44, 44, 0.76);
+  border-radius: 5px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: 0.04em;
+  color: #dedede;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 4px 0;
+  transition: 300ms;
+}
+
+.content a:hover {
+  transform: translateY(-6px);
+}
